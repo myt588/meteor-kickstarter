@@ -1,0 +1,17 @@
+{
+    "private": {
+        "MAIL_URL": "",
+        "facebook": {
+            "clientId": "",
+            "secret": ""
+        },
+        "github": {
+            "clientId": "",
+            "secret": ""
+        },
+        "twitter": {
+            "clientId": "",
+            "secret": ""
+        }
+    }
+}

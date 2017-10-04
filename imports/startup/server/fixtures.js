@@ -2,6 +2,7 @@
 
 import { Meteor } from 'meteor/meteor'
 import { Links } from '../../api/links/links.js'
+import userSeeder from './users.js'
 
 Meteor.startup(() => {
   // if the Links collection is empty
@@ -31,4 +32,5 @@ Meteor.startup(() => {
 
     data.forEach(link => Links.insert(link))
   }
+  userSeeder()
 })
