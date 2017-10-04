@@ -5,8 +5,9 @@ A kickstarting point for meteor + react
 ## Features
 
 - [x] Basic Packages for meteor + react development
-- [ ] React Router setup
-- [ ] Email Login
-- [ ] Accounts Basic Email Templates
-- [ ] Third-party User Login
+- [x] React Router setup
+- [x] Accounts Basic Email Templates
+- [x] Third-party User Login
+- [ ] Permissions and Roles
 - [ ] Testing Module
+- [ ] Email Login UI
