@@ -9,6 +9,9 @@ import { Accounts } from 'meteor/accounts-base'
 
 if (Meteor.isServer) {
   describe('users collection', function () {
+    beforeEach(function () {
+      Meteor.users.remove({})
+    })
     it('create correctly', function () {
       const userId = Accounts.createUser({ email: 'admin@test.com', username: 'admin', password: 'admin' })
       const added = Meteor.users.find({ _id: userId })
