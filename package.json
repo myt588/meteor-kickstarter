@@ -8,7 +8,8 @@
   },
   "private": true,
   "scripts": {
-    "start": "meteor --settings settings-development.json"
+    "start": "meteor --settings settings-development.json",
+    "test": "meteor test --port 4400 --driver-package=practicalmeteor:mocha"
   },
   "dependencies": {
     "babel-runtime": "^6.20.0",

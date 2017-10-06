@@ -1,5 +1,6 @@
 import { Meteor } from 'meteor/meteor'
 import { ServiceConfiguration } from 'meteor/service-configuration'
+import { BrowserPolicy } from 'meteor/browser-policy-common'
 
 // mail service url
 process.env.MAIL_URL = Meteor.settings.private.MAIL_URL
@@ -34,3 +35,9 @@ ServiceConfiguration.configurations.upsert({
     secret: Meteor.settings.private.twitter.secret
   }
 })
+
+// Configurations for X-Frame-Options and Content-Security-Policy
+BrowserPolicy.content.allowOriginForAll('*.googleapis.com')
+BrowserPolicy.content.allowOriginForAll('*.gstatic.com')
+BrowserPolicy.content.allowOriginForAll('*.bootstrapcdn.com')
+BrowserPolicy.content.allowFontDataUrl()
