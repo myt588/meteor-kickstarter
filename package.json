@@ -9,7 +9,9 @@
   "private": true,
   "scripts": {
     "start": "meteor --settings settings-development.json",
-    "test": "meteor test --port 4400 --driver-package=practicalmeteor:mocha"
+    "test": "meteor test --port 4400 --driver-package=practicalmeteor:mocha",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "babel-runtime": "^6.20.0",
@@ -19,5 +21,14 @@
     "react-dom": "^16.0.0",
     "react-router-dom": "^4.2.2",
     "simpl-schema": "^0.3.2"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "babel-root-slash-import": "^1.1.0",
+    "@storybook/react": "^3.2.13",
+    "@storybook/addon-actions": "^3.2.13",
+    "@storybook/addon-links": "^3.2.13"
   }
 }
