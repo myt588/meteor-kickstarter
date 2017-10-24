@@ -19,5 +19,8 @@
     "react-dom": "^16.0.0",
     "react-router-dom": "^4.2.2",
     "simpl-schema": "^0.3.2"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3"
   }
 }
